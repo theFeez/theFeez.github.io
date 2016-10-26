@@ -1,1 +1,30 @@
-<h1>working?</h1>
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+
+<body>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src='index.js'></script>
+
+    
+  <form action="/upload" method="POST" enctype="multipart/form-data">
+  Select an image to upload:
+  <input type="file" name="image"> 
+  <input type="submit" value="Upload Image">
+</form>
+    <form action="/login" method="POST" enctype="multipart/form-data">
+  Admin Login:
+  <input type="text" name="user" placeholder='username'> 
+    <input type='text' name='pass' placeholder='password'>
+  <input type="submit" value="Login">
+</form>
+    <ul id='picList'>
+        
+    </ul>
+</body>
+</html>
